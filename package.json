@@ -5,5 +5,8 @@
     "main": "src/index.js",
     "repository": "git@github.com:BernardFW/bernard-utils.git",
     "author": "Rémy Sanchez <remy.sanchez@hyperthese.net>",
-    "license": "WTFPL"
+    "license": "WTFPL",
+    "dependencies": {
+        "axios": "^0.16.2"
+    }
 }
