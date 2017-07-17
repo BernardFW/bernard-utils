@@ -8,7 +8,7 @@ function Analytics(baseUrl, prefix = '/webview') {
     }
 
     function makeUrl(path) {
-        return baseUrl + path + '?' + self.query;
+        return baseUrl + path + self.query;
     }
 
     function pageView(path) {
