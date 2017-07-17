@@ -1,9 +1,17 @@
-const axios = require('axios');
+var axios = require('axios');
 
-function Analytics(baseUrl, prefix = '/webview') {
-    const self = this;
+function Analytics(baseUrl, prefix) {
+    var self = this;
 
     function init() {
+        if (!baseUrl) {
+            baseUrl = '';
+        }
+
+        if (!prefix) {
+            prefix = '';
+        }
+
         self.query = window.location.search;
     }
 
