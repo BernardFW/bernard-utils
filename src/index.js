@@ -23,7 +23,7 @@ function Analytics(baseUrl, prefix) {
         const url = makeUrl('/analytics/collect');
         const data = {
             event: 'page_view',
-            path: path,
+            path: prefix + path,
         };
 
         return axios.post(url, data);
